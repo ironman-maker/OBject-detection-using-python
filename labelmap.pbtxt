@@ -1,33 +1,147 @@
-
 item {
   id: 1
-  name: 'image'
+  name: 'Knife'
 }
-
-code for mentioning ids
-
-import ospath = 'models/images/'
-counter = 1
-for f in os.listdir(path):
-    suffix = f.split('.')[-1]
-    if suffix == 'jpg' or suffix == 'png':
-        new = '{}.{}'.format(str(counter), suffix)
-        os.rename(path + f, path + new)
-        counter = int(counter) + 1
-
-//code for resizing images and resolution
-
-from PIL import Image
-import os
-import argparse
-def rescale_images(directory, size):
-    for img in os.listdir(directory):
-        im = Image.open(directory+img)
-        im_resized = im.resize(size, Image.ANTIALIAS)
-        im_resized.save(directory+img)
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Rescale images")
-    parser.add_argument('-d', '--directory', type=str, required=True, help='Directory containing the images')
-    parser.add_argument('-s', '--size', type=int, nargs=2, required=True, metavar=('width', 'height'), help='Image size')
-    args = parser.parse_args()
-    rescale_images(args.directory, args.size)
+item {
+  id: 2
+  name: 'Spoon'
+}
+item {
+  id: 1
+  name: 'banana'
+}
+item {
+  id: 1
+  name: 'Apple'
+}
+item {
+  id: 1
+  name: 'Orange'
+}
+item {
+  id: 1
+  name: 'Broccoli'
+}
+item {
+  id: 1
+  name: 'Carot'
+}
+item {
+  id: 1
+  name: 'Pizza'
+}
+item {
+  id: 1
+  name: 'Cake'
+}
+item {
+  id: 1
+  name: 'Chair'
+}
+item {
+  id: 1
+  name: 'Sofa'
+}
+item {
+  id: 1
+  name: 'Bed'
+}item {
+  id: 1
+  name: 'Diningtable'
+}
+item {
+  id: 1
+  name: 'Toilet'
+}
+item {
+  id: 1
+  name: 'TV '
+}
+item {
+  id: 1
+  name: 'Laptop'
+}
+item {
+  id: 1
+  name: 'Mouse'
+}
+item {
+  id: 1
+  name: 'Remote'
+}
+item {
+  id: 1
+  name: 'Keyboard'
+}
+item {
+  id: 1
+  name: 'Phone'
+}
+item {
+  id: 1
+  name: 'Microwave'
+}
+item {
+  id: 1
+  name: 'Oven'
+}
+item {
+  id: 1
+  name: 'Toaster'
+}
+item {
+  id: 1
+  name: 'Sink'
+}
+item {
+  id: 1
+  name: 'Refrigerator'
+}
+item {
+  id: 1
+  name: 'Book'
+}
+item {
+  id: 1
+  name: 'Clock'
+}
+item {
+  id: 1
+  name: 'Vase'
+}
+item {
+  id: 1
+  name: 'Scissor'
+}
+item {
+  id: 1
+  name: 'Teddy bear'
+}
+item {
+  id: 1
+  name: 'Hair drier'
+}
+item {
+  id: 1
+  name: 'Tooth brush'
+}
+item {
+  id: 1
+  name: 'Truck'
+}
+item {
+  id: 1
+  name: 'Bicycle'
+}
+item {
+  id: 1
+  name: 'Train'
+}
+item {
+  id: 1
+  name: 'Fan'
+}
+item {
+  id: 1
+  name: 'Bus'
+}
