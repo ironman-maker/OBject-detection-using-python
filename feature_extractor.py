@@ -34,15 +34,6 @@ for i in range(0,iimage.shape[0]):
 features = np.reshape(feature_matrix, (660*450)) 
 features.shape
 
-#importing the required libraries
-import numpy as np
-from skimage.io import imread, imshow
-from skimage.filters import prewitt_h,prewitt_v
-import matplotlib.pyplot as plt
-%matplotlib inline
-
-#reading the image 
-image = imread('puppy.jpeg',as_gray=True)
 
 #calculating horizontal edges using prewitt kernel
 edges_prewitt_horizontal = prewitt_h(image)
